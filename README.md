@@ -54,3 +54,30 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+
+## Hands-on
+
+### Install ember
+
+> `npm install -g ember-cli`
+
+### New project
+
+> `ember new <project-name>`
+
+### Run project
+
+> `npm run start`
+
+### Ember Generate. ( `ember generate <type> <name>` or `ember g <type> <name>` )
+
+>	* `ember g acceptance-test super-rentals`
+> * `ember g component-test jumbo`
+> * `ember g component rental/image`
+> *	`ember g component-class rental/image`
+> * `ember g component map --with-component-class` etc.
+
+### Test
+
+> `ember test –server or ember t -s`
+
