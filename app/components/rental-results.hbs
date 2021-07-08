@@ -1,0 +1,7 @@
+{{#if this.isResultAvailable}}
+  {{#each @results as |rental|}}
+    <li><Rental @rental={{rental}} /></li>
+  {{/each}}
+{{else}}
+  <span class="error-banner">Uh oh, this was not intended but can't find any matching rentals at the moment.</span>
+{{/if}}

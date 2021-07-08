@@ -31,3 +31,11 @@
   cursor: not-allowed;
   background-color: gray;
 }
+
+.error-banner {
+  margin: 0 50px;
+  display: flex;
+  background-color: #d99888;
+  padding: 12px;
+  border-radius: 5px;
+}
