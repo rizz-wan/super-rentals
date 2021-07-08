@@ -1,7 +1,18 @@
 <div class='rentals'>
   <label>
     <span>Where would you like to stay?</span>
-    <Input @value={{this.query}} class='light' />
+    <div class='input-container'>
+      <Input
+        @value={{this.query}}
+        class='light'
+        {{on 'keyup' this.updateButtonState}}
+      />
+      <button
+        disabled={{this.isButtonDisabled}}
+        class='clear-result'
+        {{on 'click' this.clearQuery}}
+      >Clear</button>
+    </div>
   </label>
 
   <ul class='results'>

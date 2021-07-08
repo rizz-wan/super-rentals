@@ -1,0 +1,33 @@
+.input-container {
+  position: relative;
+  display: flex;
+  max-width: 600px;
+  margin: auto;
+}
+
+.rentals input {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  display: flex;
+  padding-right: 80px;
+}
+
+.clear-result {
+  position: absolute;
+  border-radius: 5px;
+  right: 6px;
+  border: none;
+  top: 24px;
+  height: 46px;
+  cursor: pointer;
+  color: white;
+  background-color: #1e90ff;
+  transform: translateX(2px);
+  width: 70px;
+}
+
+.clear-result:disabled {
+  cursor: not-allowed;
+  background-color: gray;
+}
