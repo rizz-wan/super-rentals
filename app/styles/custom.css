@@ -39,3 +39,35 @@
   padding: 12px;
   border-radius: 5px;
 }
+
+.college {
+  margin: 8px;
+  background-color: #f6f6f6;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 1;
+  min-width: 300px;
+}
+
+.college h5,
+.college h4 {
+  padding: 4px;
+}
+
+.college:hover {
+  background-color: #f3f3f3;
+}
+
+.colleges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.icon {
+  font-size: 300px;
+  color: gray;
+}

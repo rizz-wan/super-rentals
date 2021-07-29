@@ -1,0 +1,11 @@
+<div class='colleges'><i
+    class='fa fa-university icon'
+    aria-hidden='true'
+  ></i></div>
+<div class='college'><h2>Schools with "grad" in their name</h2></div>
+<div class='colleges'>
+  {{#if this.isDataLoading}}
+    <article class='college'>Loading...</article>
+  {{/if}}
+  <Colleges />
+</div>

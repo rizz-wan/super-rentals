@@ -10,4 +10,7 @@ Router.map(function () {
   this.route('about');
   this.route('contact');
   this.route('rental', { path: '/rentals/:rental_id' });
+  this.route('colleges');
+  this.route('college', { path: '/collegeDetail/:college_id' });
+  this.route('404', { path: '/*' });
 });

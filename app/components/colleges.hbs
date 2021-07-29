@@ -1,0 +1,11 @@
+{{#each this.data as |college index|}}
+  <article class='college'>
+    <LinkTo @route='college' @model={{index}}><h5>{{college.name}}</h5></LinkTo>
+    <h5>
+      {{#if college.state_province}}
+        <span>{{college.state_province}}</span>,
+      {{/if}}
+      <span>{{college.country}}</span>
+    </h5>
+  </article>
+{{/each}}

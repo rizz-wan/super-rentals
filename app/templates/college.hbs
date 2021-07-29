@@ -1,0 +1,36 @@
+<div class='colleges'><i
+    class='fa fa-university icon'
+    aria-hidden='true'
+  ></i></div>
+
+<article class='college'>
+  <div>
+    <h4><i class='fa fa-university' aria-hidden='true'></i>
+      {{@model.collegeDetail.name}}</h4>
+    <h5><i class='fa fa-flag' aria-hidden='true'></i>
+      {{@model.collegeDetail.country}}</h5>
+  </div>
+  <a
+    href={{@model.collegeDetail.page}}
+    target='_blank'
+  >{{@model.collegeDetail.page}}
+    <i class='fa fa-external-link' aria-hidden='true'></i></a>
+</article>
+
+<div class='college'><h2>Other "grad" schools in same country</h2></div>
+{{#unless @model.similarColleges.length}}
+  <article class='college'>No other "grad" schools found in
+    {{@model.collegeDetail.country}}.</article>
+{{/unless}}
+{{#each @model.similarColleges as |college index|}}
+  <article class='college'>
+    <LinkTo @route='college' @model={{college.id}}><h5
+      >{{college.name}}</h5></LinkTo>
+    <h5>
+      {{#if college.state_province}}
+        <span>{{college.state_province}}</span>,
+      {{/if}}
+      <span>{{college.country}}</span>
+    </h5>
+  </article>
+{{/each}}
