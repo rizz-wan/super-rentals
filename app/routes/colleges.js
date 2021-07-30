@@ -24,7 +24,7 @@ export default class CollegesRoute extends Route {
                       name: arrayItem.name,
                       country: arrayItem.country,
                       page: arrayItem.web_pages[0],
-                      state_province: arrayItem.state_province,
+                      state_province: arrayItem['state-province'],
                     },
                     relationships: {},
                   },
